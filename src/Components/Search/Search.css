@@ -1,0 +1,19 @@
+.search {
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Gochi Hand', cursive;
+    background-color: lightgrey;
+}
