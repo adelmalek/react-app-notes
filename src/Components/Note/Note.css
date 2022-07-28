@@ -1,0 +1,21 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 17rem;
+    background-color: rgb(28, 241, 0);
+    border-radius: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
