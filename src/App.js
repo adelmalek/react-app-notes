@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 
 import Header from "./Components/Header/Header";
@@ -25,6 +25,17 @@ function App() {
       date: "2022.07.30."
     }
   ]);
+
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes))
+  }, [notes])
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem("notes"));
+    if (savedNotes) {
+      setNotes(savedNotes)
+    }
+  }, [])
 
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
