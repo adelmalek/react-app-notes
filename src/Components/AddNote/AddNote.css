@@ -1,0 +1,49 @@
+.add-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 17rem;
+    background-color: rgb(241, 0, 161);
+    border-radius: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 98%;
+    background-color: rgb(241, 0, 161);
+    font-family: 'Gochi Hand', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+textarea::placeholder {
+    color: rgb(88, 88, 88);
+}
+
+.add-note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-btn {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: lightgrey;
+}
