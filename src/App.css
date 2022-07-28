@@ -1,4 +1,16 @@
 .App {
     max-width: 960px;
     margin: 0 auto;
+    padding: 1rem;
+}
+
+.dark {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 1rem;
+}
+
+.dark h1 {
+    color: white;
 }

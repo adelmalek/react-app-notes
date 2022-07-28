@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: lightgrey;
+}
