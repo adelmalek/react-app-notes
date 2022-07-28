@@ -37,12 +37,18 @@ function App() {
     setNotes([...notes, newNote]);
   };
 
+  const deleteNote = (id) => {
+    const notDeletedNotes = notes.filter(note => note.id !== id);
+    setNotes(notDeletedNotes)
+  };
+
   return (
     <div className="App">
       <Search handleSearchNote={setSearchText}/>
       <NoteList 
         notes={notes.filter(note => note.text.toLowerCase().includes(searchText))} 
         handleAddNote={addNote}
+        handleDeleteNote={deleteNote}
       />
     </div>
   );
